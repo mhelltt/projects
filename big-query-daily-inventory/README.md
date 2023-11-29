@@ -8,3 +8,4 @@ To achieve this as cost effectively as possible (nearly free), I used Google Clo
 
 ## BigQuery Table Preview
 ![bigquery preview graphic](https://github.com/mhelltt/projects/blob/main/big-query-daily-inventory/bigquery-preview.png)
+Note: 'Timestamp' is actual upload time in UTC, 'DateTimeLocal' is a Us/Pacific datetime equivalent that is not actually UTC, for ease of querying
