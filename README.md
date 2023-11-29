@@ -1,6 +1,6 @@
 # projects
 
-## [BigQuery Daily Inventory Project](https://github.com/mhelltt/projects/tree/main/big-query-daily-inventory)
+## [BigQuery Daily Inventory](https://github.com/mhelltt/projects/tree/main/big-query-daily-inventory)
 
 This was a simple data pipeline that I created for a job at an e-commerce company where we needed to use end-of-day inventory, but our warehouse management system did not have historical inventory capablities.
 
