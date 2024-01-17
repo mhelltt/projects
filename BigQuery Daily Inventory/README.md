@@ -4,7 +4,7 @@ This was a simple data pipeline that I created for a job at an e-commerce compan
 
 To achieve this as cost effectively as possible (nearly free), I used Google Cloud to run a nightly cron job on their Cloud Scheduler that would trigger a Pub/Sub link to run a python script on Google Functions that would pull JSON data from our Warhouse Management System's API, parse it, transform it, timestamp it, and upload into Google BigQuery using a servie account so that I could run SQL queries on it when needed.
 
-![workflow graphic](https://github.com/mhelltt/projects/blob/main/big-query-daily-inventory/workflow.png)
+![workflow graphic](https://github.com/mhelltt/projects/blob/main/BigQuery%20Daily%20Inventory/workflow.png)
 
 ## Google Cloud Functions
 Google Cloud Functions is a serverless execution environment for building and connecting cloud services.
