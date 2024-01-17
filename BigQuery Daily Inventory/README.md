@@ -16,5 +16,5 @@ main.py
 ```
 
 ## BigQuery Table Preview
-![bigquery preview graphic](https://github.com/mhelltt/projects/blob/main/big-query-daily-inventory/bigquery-preview.png)
+![bigquery preview graphic](https://github.com/mhelltt/projects/blob/main/BigQuery%20Daily%20Inventory/bigquery-preview.png)
 Note: 'Timestamp' is actual upload time in UTC, 'DateTimeLocal' is a Us/Pacific datetime equivalent that is not actually UTC, for ease of querying
