@@ -2,9 +2,12 @@
 
 ## [BigQuery Daily Inventory](https://github.com/mhelltt/projects/tree/main/BigQuery%20Daily%20Inventory)
 
-This was a simple data pipeline that I created for a job at an e-commerce company where we needed to use end-of-day inventory, but our warehouse management system did not have historical inventory capablities.
+This is a simple data pipeline that I created for an e-commerce company. The goal was to load end-of-day inventory records with timestamps from our warehouse management system (WMS) into a Google BigQuery table with timestamps because our WMS did not have historical inventory snapshot functionality.
 
-To achieve this as cost effectively as possible (nearly free), I used Google Cloud to run a nightly cron job on their Cloud Scheduler that would trigger a Pub/Sub link to run a python script on Google Functions that would pull JSON data from our Warhouse Management System's API, parse it, transform it, timestamp it, and upload into Google BigQuery using a servie account so that I could run SQL queries on it when needed.
+To achieve this as cost effectively as possible (nearly free), I used Google Cloud Scheduler to run a cron job every night that would trigger a Pub/Sub link to run a python script on Google Cloud Functions. The python script pulls JSON data from our Warhouse Management System via REST API, parses it, transforms it, timestamps it, and uploads into a Google BigQuery table using a Google servie account.
+
+This Google BigQuery table has been used for end-of-month accounting, ad-hoc inventory analysis, and sales data analysis.
+
 
 ![workflow graphic](https://github.com/mhelltt/projects/blob/main/BigQuery%20Daily%20Inventory/workflow.png)
 
